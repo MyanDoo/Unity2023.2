@@ -1,0 +1,45 @@
+https://stackoverflow.com/questions/6313126/how-do-i-remove-a-directory-from-a-git-repository
+how to remove folder in repository
+
+<Order>
+First, enter that folder
+Second, using
+  rm -r <file_name>
+remove file in folder than 
+  cd ..
+come out from folder
+Third, rm -r <Folder_name>
+  git push
+
+in git bash,
+gksql@DESKTOP-QMVN22G MINGW64 ~/repo/Unity2023.2 (main)
+$ ls
+GameManager.cs  README.md  RestartScene.cs  link/
+
+gksql@DESKTOP-QMVN22G MINGW64 ~/repo/Unity2023.2 (main)
+$ cd link
+
+gksql@DESKTOP-QMVN22G MINGW64 ~/repo/Unity2023.2/link (main)
+$ ls
+createdFolder
+
+gksql@DESKTOP-QMVN22G MINGW64 ~/repo/Unity2023.2/link (main)
+$ rm -r createdFolder
+
+gksql@DESKTOP-QMVN22G MINGW64 ~/repo/Unity2023.2/link (main)
+$ cd ..
+
+gksql@DESKTOP-QMVN22G MINGW64 ~/repo/Unity2023.2 (main)
+$ ls
+GameManager.cs  README.md  RestartScene.cs  link/
+
+gksql@DESKTOP-QMVN22G MINGW64 ~/repo/Unity2023.2 (main)
+$ rm -r link
+
+gksql@DESKTOP-QMVN22G MINGW64 ~/repo/Unity2023.2 (main)
+$ ls
+GameManager.cs  README.md  RestartScene.cs
+
+gksql@DESKTOP-QMVN22G MINGW64 ~/repo/Unity2023.2 (main)
+$ git push
+Everything up-to-date
