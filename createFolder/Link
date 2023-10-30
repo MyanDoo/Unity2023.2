@@ -1,0 +1,34 @@
+https://stackoverflow.com/questions/12258399/how-do-i-create-a-folder-in-a-github-repository
+<folder_name>/<file_name>
+
+  in git bash,
+  
+gksql@DESKTOP-QMVN22G MINGW64 ~/repo/Unity2023.2 (main)
+$ ls
+GameManager.cs  README.md  RestartScene.cs
+
+gksql@DESKTOP-QMVN22G MINGW64 ~/repo/Unity2023.2 (main)
+$ git pull
+remote: Enumerating objects: 5, done.
+remote: Counting objects: 100% (5/5), done.
+remote: Compressing objects: 100% (2/2), done.
+remote: Total 4 (delta 1), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (4/4), 684 bytes | 52.00 KiB/s, done.
+From https://github.com/MyanDoo/Unity2023.2
+   c54a213..094ad2b  main       -> origin/main
+Updating c54a213..094ad2b
+Fast-forward
+ file1/folder1 | 1 +
+ 1 file changed, 1 insertion(+)
+ create mode 100644 file1/folder1
+
+gksql@DESKTOP-QMVN22G MINGW64 ~/repo/Unity2023.2 (main)
+$ ls
+GameManager.cs  README.md  RestartScene.cs  file1/
+
+gksql@DESKTOP-QMVN22G MINGW64 ~/repo/Unity2023.2 (main)
+$ cd file1
+
+gksql@DESKTOP-QMVN22G MINGW64 ~/repo/Unity2023.2/file1 (main)
+$ ls
+folder1
