@@ -1,4 +1,4 @@
-//씬 재시작
+//묵찌빠 게임 씬 재시작
 using System.Collections;
 using System.Collections.Generic;
 using TMPro;
