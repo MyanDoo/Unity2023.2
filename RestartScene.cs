@@ -1,3 +1,4 @@
+//씬 재시작
 using System.Collections;
 using System.Collections.Generic;
 using TMPro;
@@ -46,6 +47,4 @@ public class RestartScene : MonoBehaviour
 
         _attackScore = 0;
     }
-
-    //진행도 추가
 }
