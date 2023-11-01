@@ -45,5 +45,7 @@ public class RestartScene : MonoBehaviour
         _imgCom.texture = Resources.Load("img_4") as Texture;
 
         _attackScore = 0;
+
+        //onbuttonclick 함수 수정
     }
 }
